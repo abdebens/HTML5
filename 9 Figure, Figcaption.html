@@ -1,0 +1,202 @@
+
+<html>
+
+<head>
+    <style>
+        
+        /*start Global*/
+        * { padding: 0; margin: 0;
+            -webkit-box-sizing:border-box
+        }
+
+        body {font-family: Arial, Tahoma}
+        
+        .clearfix
+        {
+            clear:both
+        }
+        /*end global*/
+        
+        .header1 {
+            background-color: cadetblue;color: aliceblue;
+            font-size: 15px;text-align: center;padding: 4px}
+
+        nav {background-color: antiquewhite;
+            color: currentColor;text-align: center;}
+
+        nav ul li {display: inline-block;padding: 10px;}
+
+        nav ul {padding: 2px;}
+
+        nav ul li:after {content: " |"}
+
+        nav ul li:last-child:after {content: ""}
+    
+        
+        .post
+        {
+            width:70%;float:left
+        }
+        
+        .post article {
+            background-color: azure;
+            border: 1px solid #333;margin: 20px;}
+
+        .post article header {background-color: cornsilk;padding: 10px} 
+        .post article section {padding:10px}
+        
+        /*هنا بدأ الدرسسسسسسسسسسس*/
+        code{
+            background-color:aliceblue; color:blue;
+            border:1px solid#676767;
+            display:block; max-width:300px
+        }
+        
+        .figure-money
+        {
+            background-color:aliceblue;
+            padding:10px; margin-top:5px;
+            border:1px solid#ccc; width:180px;
+            text-align:center
+        }
+      
+        /*هنا انتهى الدرسسسسسسسسسس*/
+        aside
+        {
+            float:right; 
+            width:30%
+            
+        }
+        
+        aside section
+        {
+            background-color:forestgreen;
+            margin:20px 1px; padding:10px;
+            border:3px solid#333;
+        }
+        
+        aside section h3
+        {
+            background-color:beige;
+            padding:2px
+        }
+        
+        aside section ul
+        {
+            list-style:none;
+            margin-top:10px
+        }
+        
+        aside section ul li{line-height:1.8}
+        
+        aside section div
+        {
+            margin-top:10px
+        }
+        footer
+        {
+            background-color:cadetblue;color: aliceblue;
+            text-align:center; padding:3px
+        }
+        
+        main{background-color:aquamarine; 
+            text-align:center; padding:5px}
+        main p span{color:brown; font-weight:bold}
+    </style>
+</head>
+
+<body>
+    
+    <header class="header1">
+        <h1>The world is in decline</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>option</li>
+            <li>about</li>
+            <li>connect us</li>
+        </ul>
+    </nav>
+    <!-- main هنا مكان ال-->
+    <main><p>welcome in my <span>website</span></p></main>
+    
+    <!--موجود div لكي لاننسى ان ال-->
+    <div class="post">
+    <article>
+        <header>
+            <h2>The Arab world is stripped of morality</h2>
+            <p>prohibited the consumption or sale of alcoholic beverages </p>
+        </header>
+        <section>
+            <p>overnment recognition or deference which enforce varied
+                iniban rule as ameans to promote their funda</p>
+        <div>
+            Desin: &nbsp; <progress value="8" max="10"></progress> <br>
+            Coding: <progress value="65" max="100"></progress>
+        </div>
+</section>
+    </article>
+    <article>
+        <header>
+            <h2>The Arab world is stripped of morality</h2>
+            <p>prohibited the consumption or sale of alcoholic beverages </p>
+        </header>
+        <section>
+            <p>overnment recognition or deference which enforce varied
+                iniban rule as ameans to promote their funda</p>
+            <!--هنا بدأ الدرس هنا بدأ الدرس هنا بدأ الدرس-->
+            <!--معناها وصف هذا الشكل figcaption معناها الشكل وال figure أل-->
+        <!--لايستخدم فقط بالصورة ممكن ان يستخدم كصورة او كرسم بياني او كود figure ال-->
+        <!--اي المحتوى منه وفيه self contentet انه عبارة عن عنصر  div الفرق بينه وبين ال-->
+            <figure>
+            <figcaption>code div slide 3-2</figcaption>
+            <code>&lt;div&gt;this is div just test&lt;/div&gt;</code>
+            </figure>
+            <!--هنا انتهى الدرس هنا انتهى الدرس هنا انتهى الدرس-->
+        </section>
+    </article>
+    <article>
+        <header>
+            <h2>The Arab world is stripped of morality</h2>
+            <p>prohibited the consumption or sale of alcoholic beverages </p>
+        </header>
+
+        <section>
+            <p>overnment recognition or deference which enforce varied
+                iniban rule as ameans to promote their funda</p>
+            <!--هنا بدأ الدرس هنا بدأ الدرس هنا بدأ الدرس-->
+            <figure class="figure-money">     
+            <img src="img/1.jpg" width="150px" height="100px">
+            <figcaption>money cash slide 4-3</figcaption>
+            </figure>
+            <!--هنا انتهى الدرس هنا انتهى الدرس هنا انتهى الدرس-->
+        </section>
+    </article>
+</div>
+    
+   <!--start sidebar-->
+    <aside>
+        
+<section class="links">
+    <h3>catigores</h3>
+          <ul>
+              <li>attributes</li>
+              <li>headding</li>
+              <li>lists</li>
+          </ul>
+      </section>
+        
+        <section class="meter">
+     <h3>performance</h3>
+       <div>
+<meter min="0" max="1" value=".3" low=".5" high=".7" optimum=".8"></meter>
+       </div>
+      </section>
+    </aside>
+    <div class="clearfix">
+    </div>
+<footer> Copyright&copy; All resived&reg;</footer>
+</body>
+
+</html>

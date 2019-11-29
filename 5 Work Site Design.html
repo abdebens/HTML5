@@ -1,0 +1,142 @@
+<html>
+
+<head>
+    <style>
+        /*بدون اسطر فاضية div هي بتشيل التنسيق كلو بتخلي النصوص تحت بعضها مثل ال*/
+        /*ul كان كثير عريض لانه شالت الاسطر الفاضية حتى نقاط ال header1 نلاحظ حتى ال */
+        /*هذا شيء في التصميم file normalize بإمكانا وضع ملف*/
+        /*Start Global*/
+        * {
+            padding: 0; margin: 0
+            /*بإمكاني احط خضائض الخط هون*/
+            /* font-family:arial, rahoma*/
+        }
+
+        body {
+            font-family: Arial, Tahoma
+        }
+
+        /*End Global*/
+        .header1 {
+            background-color: cadetblue;
+            color: aliceblue;
+            font-size: 15px;
+            text-align: center;
+            padding: 4px
+        }
+
+        nav {
+            background-color: antiquewhite;
+            color: currentColor;
+            text-align: center;
+        }
+        
+        nav ul {
+            padding: 2px
+        }
+
+        nav ul li {
+            display: inline-block;
+            padding: 10px;
+        }
+
+        nav ul li:after {
+            content: " |"
+        }
+
+        nav ul li:last-child:after {
+            content: ""
+        }
+
+        article {
+
+            background-color: azure;
+            border: 1px solid #333;
+            margin: 20px;
+        }
+
+        .header2 {
+            background-color: cornsilk;
+            padding: 10px
+        }
+        
+        article section {padding: 10px}
+        
+        footer
+        {
+            background-color:cadetblue;color: aliceblue;
+            text-align:center; padding:3px
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header1">
+        <h1>The world is in decline</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>option</li>
+            <li>about</li>
+            <li>connect us</li>
+        </ul>
+    </nav>
+
+    <article>
+        <header class="header2">
+            <h2>The Arab world is stripped of morality</h2>
+            <p>prohibited the consumption or sale of alcoholic beverages
+                and pork, and seized banned consumer products
+                and media </p>
+        </header>
+        <section>
+            <p>overnment recognition or deference which enforce varied
+                interpretations of Sharia law. The concept is thought to have
+                originated from Wahhabism in Saudi Arabia.[5] However, the use
+                of religious police was prevalent during Taliban rule as a
+                means to promote their funda</p>
+        </section>
+
+
+    </article>
+    <article>
+        <header class="header2">
+            <h2>The Arab world is stripped of morality</h2>
+            <p>prohibited the consumption or sale of alcoholic beverages
+                and pork, and seized banned consumer products
+                and media </p>
+        </header>
+
+        <section>
+            <p>overnment recognition or deference which enforce varied
+                interpretations of Sharia law. The concept is thought to have
+                originated from Wahhabism in Saudi Arabia.[5] However, the use
+                of religious police was prevalent during Taliban rule as a
+                means to promote their funda</p>
+        </section>
+
+    </article>
+    <article>
+        <header class="header2">
+            <h2>The Arab world is stripped of morality</h2>
+            <p>prohibited the consumption or sale of alcoholic beverages
+                and pork, and seized banned consumer products
+                and media </p>
+        </header>
+
+       <section>
+            <p>overnment recognition or deference which enforce varied
+                interpretations of Sharia law. The concept is thought to have
+                originated from Wahhabism in Saudi Arabia.[5] However, the use
+                of religious police was prevalent during Taliban rule as a
+                means to promote their funda</p>
+        </section>
+
+    </article>
+
+    <footer> Copyright&copy; All resived&reg;</footer>
+</body>
+
+</html>

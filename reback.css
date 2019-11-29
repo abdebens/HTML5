@@ -1,0 +1,161 @@
+*
+{
+    margin:0; padding:0;
+    
+}
+
+body{background-color:antiquewhite;font-family:tahoma}
+
+.head
+{
+    text-align:center;
+    background-color:cadetblue;color:azure;
+}
+
+nav
+{text-align:center;background-color:darkkhaki}
+
+ul
+{padding:8px}
+
+ul li
+{
+    display:inline-block; 
+    padding:0 10px 0 0;
+    color:azure;font-weight:bolder;
+}
+main
+{
+    text-align:center;background-color:firebrick;color:white;
+    padding:5px
+}
+
+article
+{
+    background-color:deepskyblue;width:600px;padding:10px;
+    margin:30px 0 15px 10px}
+
+article header
+{
+    color:ghostwhite;margin-bottom:10px;;padding:10px
+}
+
+article section
+{
+    color:blanchedalmond;background-color:darkslategray;
+    padding:8px   
+}
+
+.post{width:70%;float:left}
+aside{width:30%; float:left; margin-bottom:20px}
+
+.clear{clear:left;}
+
+aside section
+{
+    border:2px solid black;
+    margin-top:30px;padding:15px;
+    background-color:darkturquoise
+}
+
+aside section h3
+{
+    background-color:burlywood; width:110px;text-align:center;
+}
+
+aside section ul li{display:block;padding:3px;color:darksalmon;
+    background-color: aliceblue;width:60px;margin:10px}
+
+
+details ul{list-style-type:none;}
+
+details ul li{display:block; padding:4px}
+
+code
+{
+    background-color:skyblue;color:darkblue;
+    display:block; width:400px;text-align:center;
+    margin:10px 0;border:1px solid black
+}
+
+
+figure img
+{
+    width:190px; height:150px;
+}
+
+
+#ou::-webkit-calendar-picker-indicator
+{
+    display:none;
+}
+
+output
+{
+    color:white; font-weight:bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer
+{
+    background-color:cadetblue;color:azure;
+    text-align:center;
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

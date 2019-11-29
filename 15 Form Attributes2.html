@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <style>
+        input{display:block}
+        .pattern{margin-top:50px}
+    </style>
+    <!-- before, after وهي css في خاصية بال required بالنسبة لخاصية ال 
+         تقوم بوضع علامة النجمة بجانب الحقل الذي لم يتم ملئه-->
+</head>
+
+<body>
+    <form id="main-form">
+        
+<!--وهو شيء يمسك المكان placeholder لمعرفة هذا الحقل ماهو سوف اضع  label لا اريد ان اضع-->
+        <input type="text" name="name" placeholder="first name"> 
+        <!--بين الايميلين بحط فاصلة multiple اذا اردت ان ادخل ايميلين بضع-->
+        <!-- email + upload file تعمل الخاصية في ال-->
+        email<input type="email" name="email" multiple>
+        <!--في الاساس لايجوز تحديد اكثر من ملف هنا اقدر احدد اكثر من واحد-->
+        <input type="file" multiple> 
+        <input type="submit" value="send">
+        <!--formnovalidate not supported safari-->
+        <input type="submit" value="send without validate" formnovalidate>
+        <!--formtarget="_blank"-->
+        <input type="submit" value="target" 
+               formtarget="_blank" formnovalidate>
+        
+     </form>
+    <!--form نريد ان نربط هذا الحقل بال-->
+    last name<input type="text" name="last name" form="main-form">
+    
+    
+    
+    
+    <!--وهي خاصية بالجافا سكريبت regular expression تعتمد على ال
+  regular expression نطلب منه بناء على ال validate وهو عمل pattern ال
+ ع كيفي بشغلة تخصني  validate انه اعمل-->
+    <!-- text, search, tel, url, email يتعامل مع ال pattern ال-->
+    
+    <form class="pattern">
+    <fieldset>
+        <legend>Pettern(Regular expression)</legend>
+        <input type="text" name="name" pattern="[A-Z]{6}">
+        <input type="text" name="last" pattern="[A-Za-z]{4}">
+        <input type="submit" value="send">
+        </fieldset>
+    </form>
+    
+<!-- color,range,checkbox,radio,file,hidden,submit لايعمل على readonly ال-->
+    
+    <!--يوجد بينهم 3 فروق مهمين
+   1.copy بنقدر نعمل للنص readonly 
+   2.readonly لاترسل بيانات مثل ال disabled عند عمل ارسال للبيانات ال
+   3.readonly على عكس ال disabled يتخطى ال focus عند عمل-->
+<form>
+        <fieldset>
+            <legend>Readonly vs Disabled</legend>
+            
+            <input type="text" name="read" value="Readonly" readonly>
+            <input type="text" name="disable" value="Disabled" disabled>
+            <input type="submit" value="send">
+        </fieldset>
+    </form>
+    
+</body>
+
+</html>

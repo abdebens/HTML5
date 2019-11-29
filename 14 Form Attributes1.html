@@ -1,0 +1,58 @@
+<html>
+    <head></head>
+    <body>
+    <!--يعني اذا كان في شروط شيلها وخلي الكتابة حرة-->
+  <form novalidate>     
+    <input type="text" disabled>
+        
+      <!--هذا الحقل مطلوب ملئه-->
+    <input type="text" required>
+    <br>
+      <!--اول ماتفتح الصفحة حط المؤشر في الاسم-->
+    <input type="text" name="name" autofocus="on">
+      <!--لاتظهر اكمال النص-->
+    <input type="email" name="email" autocomplete="off">
+    <br>
+    <input type="submit" value="send">
+  </form>
+        
+        
+    <!--وهي الصفحة التي نريد ارسال البيانات اليها action ال-->
+     <!--طريقة ارسال البيانات على السيرفر method ال-->
+     <!--تبعث البيانات في اللينك الي فوق method="get" ال-->
+     <!--مابقدر اشوفها باللينك form تبعث البيانات جوا جسم ال method="post" ال-->  
+     <!--لعمل استثناء input خاصية اضعها في زر ال formmethod,formaction ال-->
+        
+     <!-- error يعطي method="post" في ملاحظة عند وضع ال
+     في الصفحة لانو لايوجد جهة تستقبل البيانات-->
+        
+      <!--اي نوع تشفير البيانات الي رح ابعثها بالسيرفر enctype=encoding type-->  
+        
+    <!-- enctype="application/x-www-form-urlencoded"    
+       يكون التشفير الخيار الأول يقوم بتحويل البيانات الموجودة في enctype لو ما حطينا defult ال 
+        لعلامات زائد spaces وبحول ال  ascii hex value اللينك الى شغلة تسمى--> 
+        
+        <!--enctype="multipart/form-data"
+         <input type="file"> هذا النوع لايقوم بالتشفير نستخدمه عند رفع ملفات الى السيرفر
+        لانه لانريد ان تكون الملفات مشفرة عند تحميلها-->
+        
+        <!--enctype="text/plain"
+         special characters لعلامات زائد ولاتشفر ال spaces هاي تشفر فقط ال 
+          debugging من النادر استخدامها تستخدم فقط في ال -->
+        
+        <!--تشتغل فقط في  formmethod,formaction ملاحظة
+         <input type="submit">  <input type="image">-->
+        
+<form action="test.html" method="get" 
+      enctype="text/plain">   
+     <input type="text" name="name">
+     <input type="text" name="email">
+     <br>
+     <input type="submit" value="defult submit">
+<input type="submit" value="other submit" 
+       formaction="index.html" formmethod="get">
+ </form>
+        
+        
+    </body>
+</html>

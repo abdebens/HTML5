@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <style></style>
+</head>
+
+    <body>
+           
+        <!--absolute path او relative path ممكن يكون src ال
+            absolute path: أن نضع روابط من موقع
+            relative path: ان نضع مسار الملف من الجهاز -->
+                
+        <!-- multi purpose اي mimi type كل ملف على الإنترنت اله شغلة اسمها-->
+        <!--type="" وهو الخاص بإمتداد الملفات ونوعها-->
+        <!--source لكن لماذا وضعنا وسم ال audio داخل ال attribute src يوجد 
+          عشان تمشي مع كل المتصفحات audio عشان ادعم كل المتصفحات لازم احط كل انواع ال-->
+        
+        <!--لكي يبان المشغل واقدر اتحكم فيه audio اول خاصية بال controls ال -->
+        <!--تشغيل اتوماتيكي واعادة تشغيل وكتم الصوت autoplay loop muted -->
+        
+        <!--hint هي عبارة عن نصيحة للمتصفح preload  
+        preload="auto": حمل الملف سواء شفلت الملف او لا
+        preload="none": حمل الملف بمجرد تشغيله
+        preload="metadata":حمل لي معلومات الملف اول ماتفتح الصفحة-->        
+            <section>
+            <h3>audio's today</h3>
+            <audio controls autoplay loop muted preload="auto">
+            <source src="02.mp3" type="audio/mpeg">
+            <source src="02.ogg" type="audio/ogg">
+         <!--تظهر هذه الرسالة audio الرسالة هاي لو فتحت اي ملف صوتي في متصفح لايدعم ال--> 
+            your browser not supports this file audio                
+            </audio>
+        </section>
+        
+        <section>
+        <audio id="audio3" autoplay controls>
+        <source src="videos/tyba.mp3" type="audio/mpeg">
+        </audio>
+        </section>
+        
+        <section>
+            <h3>video's today</h3>
+            <video controls autoplay loop muted preload="none" poster="img/10.jpg">
+          <!--عشان يختار المتصفح الصيغة الي يدعمها source حطينا ال-->
+            <source src="videos/005.avi" type="video/msvideo">
+            <source src="videos/005.avi" type="video/avi">
+            <source src="videos/005.avi" type="video/x-msvideo">
+            
+           <!--هو عبارة عن عنصر للترجمة وخصائصها track ال-->
+            <!--label: عنوان الترجمة-->
+            <!--srclang: language iso code-->
+            <track src="sub.vtt" kind="metadata" srclang="en" label="english">
+         <!--تظهر هذه الرسالة audio الرسالة هاي لو فتحت اي ملف صوتي في متصفح لايدعم ال--> 
+            your browser not supports this file video               
+           </video>
+        </section>
+</body>
+</html>

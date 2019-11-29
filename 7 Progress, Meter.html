@@ -1,0 +1,190 @@
+
+<html>
+
+<head>
+    <style>
+        
+        /*start Global*/
+        * { padding: 0; margin: 0;
+            -webkit-box-sizing:border-box
+        }
+
+        body {font-family: Arial, Tahoma}
+        
+        .clearfix
+        {
+            clear:both
+        }
+        /*end global*/
+        
+        .header1 {
+            background-color: cadetblue;color: aliceblue;
+            font-size: 15px;text-align: center;padding: 4px}
+
+        nav {background-color: antiquewhite;
+            color: currentColor;text-align: center;}
+
+        nav ul li {display: inline-block;padding: 10px;}
+
+        nav ul {padding: 2px;}
+
+        nav ul li:after {content: " |"}
+
+        nav ul li:last-child:after {content: ""}
+    
+        
+        .post
+        {
+            width:70%;float:left
+        }
+        
+        .post article {
+            background-color: azure;
+            border: 1px solid #333;margin: 20px;}
+
+        .post article header {background-color: cornsilk;padding: 10px} 
+       .post article section {padding:10px}
+        
+        aside
+        {
+            float:right; 
+            width:30%
+            
+        }
+        
+        aside section
+        {
+            background-color:forestgreen;
+            margin:20px 1px; padding:10px;
+            border:3px solid#333;
+        }
+        
+        aside section h3
+        {
+            background-color:beige;
+            padding:2px
+        }
+        
+        aside section ul
+        {
+            list-style:none;
+            margin-top:10px
+        }
+        
+        aside section ul li{line-height:1.8}
+        
+        aside section div
+        {
+            margin-top:10px
+        }
+        footer
+        {
+            background-color:cadetblue;color: aliceblue;
+            text-align:center; padding:3px
+        }
+        
+        main{background-color:aquamarine; 
+            text-align:center; padding:5px}
+        main p span{color:brown; font-weight:bold}
+    </style>
+</head>
+
+<body>
+    
+    <header class="header1">
+        <h1>The world is in decline</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>option</li>
+            <li>about</li>
+            <li>connect us</li>
+        </ul>
+    </nav>
+    <!-- main هنا مكان ال-->
+    <main><p>welcome in my <span>website</span></p></main>
+    
+    <!--موجود div لكي لاننسى ان ال-->
+    <div class="post">
+    <article>
+        <header>
+            <h2>The Arab world is stripped of morality</h2>
+            <p>prohibited the consumption or sale of alcoholic beverages </p>
+        </header>
+        <section>
+            <p>overnment recognition or deference which enforce varied
+                iniban rule as ameans to promote their funda</p>
+            
+           <!--الي بعملو مستوى تقدم تبع التحميل مثلا وما شابه progress ال -->  
+            <!-- value,max وهي ال attributes يوجد -->
+            <!--value:يعني وصل العد لكم-->
+            <!--max:كم تريد الحد الأقصى مثلا 10-->
+        <div>
+            Desin: &nbsp; <progress value="8" max="10"></progress> <br>
+            Coding: <progress value="65" max="100"></progress>
+        </div>
+            <!--مختلف هو عداد تقدم ممكن يطلع وممكن ينزل مثل مراقبة درجة الحرارة meter ال
+            بنلاقيه مرتفع وبس تبرد الحرارة بنزل-->  
+</section>
+    </article>
+    <article>
+        <header>
+            <h2>The Arab world is stripped of morality</h2>
+            <p>prohibited the consumption or sale of alcoholic beverages </p>
+        </header>
+        <section>
+            <p>overnment recognition or deference which enforce varied
+                iniban rule as ameans to promote their funda</p>
+        </section>
+    </article>
+    <article>
+        <header>
+            <h2>The Arab world is stripped of morality</h2>
+            <p>prohibited the consumption or sale of alcoholic beverages </p>
+        </header>
+
+        <section>
+            <p>overnment recognition or deference which enforce varied
+                iniban rule as ameans to promote their funda</p>
+        </section>
+    </article>
+</div>
+    
+   <!--start sidebar-->
+    <aside>
+        <!--box وبدي اخليه ب header هيك لأني بدي احلطه section اعملت ال
+           بس يمسك الي جواه aside لحتى يكون شكله باين وال -->
+<section class="links">
+    <h3>catigores</h3>
+          <ul>
+              <li>attributes</li>
+              <li>headding</li>
+              <li>lists</li>
+          </ul>
+      </section>
+        
+        <section class="meter">
+     <h3>performance</h3>
+       <div>
+    <!--يوجد عناصر مثل min,max,value-->
+    <!--min: القيمة تبدأ من 0
+        max:القيمة الى اقصى حد 1
+        value: تكون بالقيمة بين الصفر والواحد بالأعشار-->
+        <!--يعني حد ادنى وحد اعلى اذا وصل اقل من الحد المكتوب يتغير اللون low,high في ايضا-->
+           <!--يعني الحالة المثاليه بتكون ع النص optimum في كمان-->
+           <!--low ثم ال high اعلى ثم ال optimum بطلع اللون الأحمر لما تكون ال-->
+<meter min="0" max="1" value=".3" low=".5" high=".7" optimum=".8"></meter>
+       </div>
+      </section>
+    </aside>
+    <!--end sidebar-->
+    
+    <!--يخش فيهم footer وما يخلي العناصر تدخل ببعضها ال  clear لل fix عشان يعملي-->
+    <div class="clearfix">
+    </div>
+    
+<footer> Copyright&copy; All resived&reg;</footer>
+</body>
+
+</html>

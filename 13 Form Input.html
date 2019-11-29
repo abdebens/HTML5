@@ -1,0 +1,61 @@
+
+<html>
+    <head>
+        <style>
+            input{display:block; margin-bottom:10px}
+        </style>
+    </head>
+    <body>
+        <form>
+          <!--ينفع بالشغل البرمجي اغير لون موقعي او الوان عناصر معينة بالصفحة -->
+            <!--القيمة الاساسية للون value ال -->
+            <!--not spupported IE&firefox-->
+            <label>color</label>
+            <input type="color" name="theme" value="#0000ff">
+            
+            <label>range</label>
+            <input type="range" name="rng" min="0" max="100" step="25" value="60">
+   
+            <!--عشان نمنع الكتابة بداخلها javascript بنحتاج -->
+            <label>number</label>
+            <input type="number" name="nbr" min="0" max="20" step="5" value="10">
+            
+            <!--error validation اذا بدخل ايميل غلط مش صحيح بعطيني -->
+            <!--not suported safari-->
+            <label>email</label>
+            <input type="email" name="email">
+            
+            <!--not supported fairefox & safari & opera-->
+            <label>search</label>
+            <input type="search" name="search">         
+
+            <!--http://www.anything.com يجب ان تكون صيغة اللينك-->
+            <!--not supported safari-->
+            <label>url</label>
+            <input type="url" name="link">    
+            
+            <!--not supported explorer & firefox-->
+            <label>time</label>
+            <input type="time" name="timing">    
+            
+            <label>date</label>
+            <input type="date" name="date">
+            
+            <!--not supoorted IE & firefox-->
+            <!--space فهو بمثابة T عند ارسال القيم يفصل بين التاريخ والوقت بحرف-->
+            <label>datetime</label>
+            <input type="datetime-local" name="datetime">
+            
+            <label>month</label>
+            <input type="month" name="month">
+            
+            <label>week</label>
+            <input type="week" name="week">
+            
+            <input type="submit" value="send">
+            
+<!-- simple تكون html5 ايضا ولكن في ال  jquery في ال time picker نستطيع عمل -->
+          
+        </form>
+    </body>
+</html>

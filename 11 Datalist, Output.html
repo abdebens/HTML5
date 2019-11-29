@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <style>
+            /*list هذا لإخفاء السهم في ال*/
+            input::-webkit-calendar-picker-indicator {
+            display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <!--html5 في لغة  form أول عنصر من العناصر الجديدة في ال -->
+        <!--فيها بيانات بنقدر نختار منها وبنقدر نكتب فيها list وهو Datalist ال -->
+        <!--وتقوم بعمل بحث عن اسم الكلمة aijax خاصية كانت تنعمل ب ال-->
+        <!--input يوجد اضافات في-->
+    <!--type="text" autocomplete="off"
+        spellcheck="off" placeholder="Jump To"-->
+        <section>
+            <h3>what your favourite browser?</h3>
+            <form>
+            <input list="browsers">
+            <datalist id="browsers">
+                <option value="chrome">chrome</option>
+                <option value="opera">opera</option>
+                <option value="firefox">firefox</option>
+                <option value="safari">safari</option>
+            </datalist>
+           </form>
+        </section>
+        
+        <section>
+            <select>
+                <optgroup label="browsers">
+                <option value="chrome">chrome</option>
+                <option selected value="firefox">firefox</option>
+                <option value="safari">safari</option>
+              </optgroup>
+            </select>
+        </section>
+        
+        <!--form يحدث داخل ال calcolation بطلع ناتج ل output ال-->
+        <section>
+            <h3>calculate your age by days</h3>
+            <!--form الي بتنعمل على ال event هو عبارة عن oninput ال-->
+            <!--نريد اول ما نكتب رقم يحسب ع طول عن طريق كود جافا داخل هذا الحدث-->
+            <!--لرقم value بتحول ال parseint() ال-->
+        <form oninput="result.value=parseInt(age.value) * parseInt(days.value) + ' Day'">
+            <input type="text" name="age">
+            <input type="hidden" name="days" value="365">
+            <output name="result"></output>
+        </form>
+        </section>
+        
+    </body>
+</html>
